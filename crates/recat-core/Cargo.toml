@@ -8,3 +8,10 @@ license-file.workspace = true
 readme.workspace = true
 
 [dependencies]
+
+# workspace dependencies
+chrono = { workspace = true }
+reddd = { workspace = true }
+reddd-macros = { workspace = true }
+serde = { workspace = true }
+uuid = { workspace = true }

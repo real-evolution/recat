@@ -9,3 +9,8 @@ license-file = "LICENSE"
 readme = true
 
 [workspace.dependencies]
+chrono = { version = "0", features = ["serde"] }
+reddd = { version = "0", features = ["serde", "usecase"] }
+reddd-macros = { version = "0" }
+serde = { version = "1", features = ["derive"] }
+uuid = { version = "1", features = ["fast-rng", "serde", "std", "v7"] }
