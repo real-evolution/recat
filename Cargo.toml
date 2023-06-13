@@ -9,6 +9,7 @@ license-file = "LICENSE"
 readme = true
 
 [workspace.dependencies]
+async-trait = { version = "0" }
 chrono = { version = "0", features = ["serde"] }
 reddd = { version = "0", features = ["serde", "usecase"] }
 reddd-macros = { version = "0" }
