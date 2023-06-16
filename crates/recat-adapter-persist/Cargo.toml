@@ -8,3 +8,5 @@ license-file.workspace = true
 readme.workspace = true
 
 [dependencies]
+diesel = { version = "2", features = ["postgres"] }
+dotenvy = { version = "0" }
