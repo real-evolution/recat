@@ -1,8 +1,8 @@
-use reddd::domain::{Entity, UseCase};
+use reddd::domain::UseCase;
 use reddd_macros::UseCase;
 
 use crate::{
-    entities::{Principle, Product, Token},
+    entities::Product,
     error::AppError,
 };
 
@@ -23,10 +23,10 @@ pub struct AddProductInput {
     pub description: Option<String>,
 
     /// The unique identifier of the owner of the product.
-    pub owner_id: <Principle as Entity>::Key,
+    pub owner_id: uuid::Uuid,
 
     /// The unique identifier of the price's token/currency.
-    pub price_token_id: <Token as Entity>::Key,
+    pub price_token_id: uuid::Uuid,
 
     /// The amount of the price's token/currency.
     pub price_amount: i32,
