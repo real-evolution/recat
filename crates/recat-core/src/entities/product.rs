@@ -23,7 +23,7 @@ pub struct Product {
     pub owner_id: Key<Self, uuid::Uuid>,
 
     /// The unique identifier of the price's token/currency.
-    pub price_token_id: Key<Self, uuid::Uuid>,
+    pub price_token_id: <Token as Entity>::Key,
 
     /// The amount of the price's token/currency.
     pub price_amount: i32,
