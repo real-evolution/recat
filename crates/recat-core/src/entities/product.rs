@@ -19,7 +19,7 @@ pub struct Product {
     pub quantity: u32,
 
     /// The description of the product.
-    pub description: String,
+    pub description: Option<String>,
 
     /// The unique identifier of the owner of the product.
     pub owner_id: <Principle as Entity>::Key,
