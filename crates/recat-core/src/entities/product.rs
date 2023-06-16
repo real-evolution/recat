@@ -3,6 +3,8 @@ use reddd::domain::{Entity, Key, MutableEntity};
 use reddd_macros::MutableEntity;
 use serde::{Deserialize, Serialize};
 
+use super::{Principle, Token};
+
 /// A struct representing a product.
 #[derive(Debug, MutableEntity, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -20,7 +22,7 @@ pub struct Product {
     pub description: String,
 
     /// The unique identifier of the owner of the product.
-    pub owner_id: Key<Self, uuid::Uuid>,
+    pub owner_id: <Principle as Entity>::Key,
 
     /// The unique identifier of the price's token/currency.
     pub price_token_id: <Token as Entity>::Key,
