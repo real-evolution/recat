@@ -6,7 +6,7 @@ use crate::{
     error::AppError,
 };
 
-/// A use case to add a [`Product`].
+/// A use case to update a [`Product`].
 #[derive(Debug, UseCase)]
 #[usecase(input = "UpdateProductInput", output = "Product", error = "AppError")]
 pub struct UpdateProduct;
