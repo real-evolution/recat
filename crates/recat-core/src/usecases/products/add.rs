@@ -1,5 +1,6 @@
 use reddd::domain::UseCase;
 use reddd_macros::UseCase;
+use rust_decimal::Decimal;
 
 use crate::{
     entities::Product,
@@ -29,5 +30,5 @@ pub struct AddProductInput {
     pub price_token_id: uuid::Uuid,
 
     /// The amount of the price's token/currency.
-    pub price_amount: i32,
+    pub price_amount: Decimal,
 }
