@@ -10,6 +10,7 @@ readme = true
 
 [workspace.dependencies]
 async-trait = { version = "0" }
+anyhow = { version = "1" }
 chrono = { version = "0", features = ["serde"] }
 derive-new = { version = "0" }
 reddd = { version = "0", features = ["serde", "usecase"] }
