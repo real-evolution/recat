@@ -1,7 +1,7 @@
 use chrono::{DateTime, Utc};
 use reddd::domain::{Entity, Key, MutableEntity};
 use reddd_macros::MutableEntity;
-use rust_decimal::Decimal;
+use bigdecimal::BigDecimal;
 use serde::{Deserialize, Serialize};
 
 /// A struct representing a product.
@@ -27,7 +27,7 @@ pub struct Product {
     pub price_token_id: uuid::Uuid,
 
     /// The amount of the price's token/currency.
-    pub price_amount: Decimal,
+    pub price_amount: BigDecimal,
 
     /// The timestamp at which the product was created.
     pub created_at: DateTime<Utc>,
