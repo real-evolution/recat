@@ -17,7 +17,10 @@ dotenvy = { version = "0" }
 recat-core = { path = "../recat-core" }
 
 # workspace dependencies
+async-trait = {workspace = true}
+anyhow = {workspace = true}
 chrono = {workspace = true}
+derive-new = {workspace = true}
 reddd = {workspace = true}
 bigdecimal = {workspace = true}
 uuid = {workspace = true}
