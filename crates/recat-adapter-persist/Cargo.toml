@@ -8,5 +8,15 @@ license-file.workspace = true
 readme.workspace = true
 
 [dependencies]
-diesel = { version = "2", features = ["postgres"] }
+diesel = { version = "2", features = ["extras"] }
+diesel-async = { version = "0", features = ["postgres", "deadpool"] }
 dotenvy = { version = "0" }
+
+# local dependencies
+recat-core = { path = "../recat-core" }
+
+# workspace dependencies
+chrono = {workspace = true}
+reddd = {workspace = true}
+bigdecimal = {workspace = true}
+uuid = {workspace = true}
