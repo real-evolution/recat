@@ -18,7 +18,7 @@ pub struct AddProductInput {
     pub title: String,
 
     /// The quantity of the product.
-    pub quantity: u32,
+    pub quantity: i32,
 
     /// The description of the product.
     pub description: Option<String>,
