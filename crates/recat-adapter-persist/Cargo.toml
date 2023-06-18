@@ -8,6 +8,7 @@ license-file.workspace = true
 readme.workspace = true
 
 [dependencies]
+deadpool = { version = "0", features = ["rt_tokio_1"] }
 diesel = { version = "2", features = ["extras"] }
 diesel-async = { version = "0", features = ["postgres", "deadpool"] }
 dotenvy = { version = "0" }
