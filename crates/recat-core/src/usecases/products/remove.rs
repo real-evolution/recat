@@ -7,7 +7,7 @@ use crate::{entities::Product, error::AppError};
 #[derive(Debug, UseCase)]
 #[usecase(
     input = "<Product as Entity>::Key",
-    output = "Product",
+    output = "()",
     error = "AppError"
 )]
 pub struct RemoveProduct;
