@@ -1,4 +1,4 @@
-use reddd::domain::UseCase;
+use reddd::domain::{UseCase, Entity};
 use reddd_macros::UseCase;
 
 use crate::{
@@ -13,6 +13,9 @@ pub struct UpdateProduct;
 
 #[derive(Debug)]
 pub struct UpdateProductInput {
+    /// The unique identifier of the product.
+    pub id: <Product as Entity>::Key,
+
     /// The title of the product.
     pub title: Option<String>,
 
