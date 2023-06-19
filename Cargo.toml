@@ -17,4 +17,5 @@ reddd = { version = "0", features = ["serde", "usecase"] }
 reddd-macros = { version = "0" }
 bigdecimal = { version = "0", features = ['serde'] }
 serde = { version = "1", features = ["derive"] }
+thiserror = { version = "1" }
 uuid = { version = "1", features = ["fast-rng", "serde", "std", "v7"] }

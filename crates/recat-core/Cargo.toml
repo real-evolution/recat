@@ -10,9 +10,11 @@ readme.workspace = true
 [dependencies]
 
 # workspace dependencies
+anyhow = { workspace = true }
 chrono = { workspace = true }
 reddd = { workspace = true }
 reddd-macros = { workspace = true }
 bigdecimal = { workspace = true }
 serde = { workspace = true }
+thiserror = { workspace = true }
 uuid = { workspace = true }
