@@ -12,4 +12,5 @@ readme.workspace = true
 recat-core = { path = "../recat-core" }
 
 # workspace dependencies
+async-trait = { workspace = true }
 reddd = { workspace = true }
