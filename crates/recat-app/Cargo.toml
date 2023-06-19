@@ -8,6 +8,8 @@ license-file.workspace = true
 readme.workspace = true
 
 [dependencies]
+# local dependencies
+recat-core = { path = "../recat-core" }
 
 # workspace dependencies
 reddd = { workspace = true }
