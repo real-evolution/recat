@@ -6,7 +6,7 @@ use crate::{entities::Product, error::AppError};
 /// A use case to get a page of [`Product`]s.
 #[derive(Debug, UseCase)]
 #[usecase(
-    input = "Pagination<'a, Product>",
+    input = "Pagination<Product>",
     output = "Vec<Product>",
     error = "AppError"
 )]

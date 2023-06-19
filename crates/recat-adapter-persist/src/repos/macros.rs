@@ -28,9 +28,9 @@ macro_rules! impl_repo {
                 Ok(item)
             }
 
-            async fn get_page<'a>(
+            async fn get_page(
                 &self,
-                params: reddd::domain::Pagination<'a, Self::Entity>,
+                params: reddd::domain::Pagination<Self::Entity>,
             ) -> reddd::domain::error::RepoResult<Vec<Self::Entity>> {
                 use $crate::error::DieselResultExt;
                 use $crate::schema::$table::dsl;
