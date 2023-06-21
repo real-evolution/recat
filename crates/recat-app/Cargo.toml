@@ -10,7 +10,11 @@ readme.workspace = true
 [dependencies]
 # local dependencies
 recat-core = { path = "../recat-core" }
+recat-adapter-persist = { path = "../recat-adapter-persist" }
 
 # workspace dependencies
 async-trait = { workspace = true }
+bigdecimal = { workspace = true }
+chrono = { workspace = true }
 reddd = { workspace = true }
+uuid = { workspace = true }
