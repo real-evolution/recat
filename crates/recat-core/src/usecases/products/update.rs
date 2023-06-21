@@ -1,3 +1,4 @@
+use bigdecimal::BigDecimal;
 use reddd::domain::{UseCase, Entity};
 use reddd_macros::UseCase;
 
@@ -20,7 +21,7 @@ pub struct UpdateProductInput {
     pub title: Option<String>,
 
     /// The quantity of the product.
-    pub quantity: Option<u32>,
+    pub quantity: Option<i32>,
 
     /// The description of the product.
     pub description: Option<String>,
@@ -29,5 +30,5 @@ pub struct UpdateProductInput {
     pub price_token_id: Option<uuid::Uuid>,
 
     /// The amount of the price's token/currency.
-    pub price_amount: Option<i32>,
+    pub price_amount: Option<BigDecimal>,
 }
