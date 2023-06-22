@@ -7,13 +7,13 @@ use crate::state::{AppState, DataContext};
 pub struct GetProductPageHandler;
 
 #[async_trait::async_trait]
-impl<'a, S: AppState> UseCaseHandler<GetProductPage<'a>, S>
+impl<S: AppState> UseCaseHandler<GetProductPage, S>
     for GetProductPageHandler
 {
     async fn execute(
         input: Pagination<Product>,
         state: &S,
-    ) -> Result<Vec<Product>, <GetProductPage<'a> as UseCase>::Error> {
+    ) -> Result<Vec<Product>, <GetProductPage as UseCase>::Error> {
         Ok(state.data().products().get_page(input).await?)
     }
 }

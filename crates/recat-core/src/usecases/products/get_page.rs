@@ -10,6 +10,4 @@ use crate::{entities::Product, error::AppError};
     output = "Vec<Product>",
     error = "AppError"
 )]
-pub struct GetProductPage<'a> {
-    phantom: std::marker::PhantomData<&'a ()>,
-}
+pub struct GetProductPage {}
