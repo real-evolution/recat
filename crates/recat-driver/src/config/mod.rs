@@ -4,6 +4,7 @@ mod parse;
 use std::path::PathBuf;
 
 use clap::{Parser, ValueEnum};
+use recat_app::state::AppConfig;
 
 #[derive(Debug, Parser)]
 #[command(author, version, about, long_about = None)]
@@ -28,3 +29,5 @@ pub(crate) enum ConfigFormat {
     Json,
     Yaml,
 }
+
+impl AppConfig for RecatArgs {}
