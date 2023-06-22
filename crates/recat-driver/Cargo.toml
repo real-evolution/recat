@@ -18,4 +18,6 @@ recat-adapter-persist = { path = "../recat-adapter-persist" }
 
 # workspace dependencies
 anyhow = { workspace = true }
+async-trait = { workspace = true }
 chrono = { workspace = true }
+reddd = { workspace = true }

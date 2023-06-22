@@ -1,4 +1,5 @@
 mod data_context;
+mod usecases;
 
 use recat_app::state::{AppConfig, AppState, DataContext};
 
