@@ -15,3 +15,7 @@ recat-core = { path = "../recat-core" }
 recat-app = { path = "../recat-app" }
 recat-adapter = { path = "../recat-adapter" }
 recat-adapter-persist = { path = "../recat-adapter-persist" }
+
+# workspace dependencies
+anyhow = { workspace = true }
+chrono = { workspace = true }
