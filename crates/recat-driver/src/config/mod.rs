@@ -1,3 +1,4 @@
+mod data;
 mod parse;
 
 use std::path::PathBuf;
