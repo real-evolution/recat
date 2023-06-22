@@ -9,6 +9,7 @@ readme.workspace = true
 [dependencies]
 # external dependencies
 clap = { version = "4", features = ["color", "derive", "env"] }
+dotenvy = { version = "0" }
 
 # local dependencies
 recat-core = { path = "../recat-core" }
