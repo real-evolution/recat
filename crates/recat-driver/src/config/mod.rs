@@ -15,6 +15,10 @@ pub(crate) struct RecatArgs {
     /// The format of the configuration file.
     #[arg(long, env = "RECAT_CONFIG_FORMAT", default_value = "toml")]
     config_format: ConfigFormat,
+
+    /// Data configuration values.
+    #[command(flatten, next_help_heading = "Database Options")]
+    pub(crate) data: data::RecatDataConfig,
 }
 
 /// An enum representing the supported configuration file formats.
