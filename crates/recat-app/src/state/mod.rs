@@ -1,5 +1,7 @@
 mod data;
+mod config;
 
+pub use config::AppConfig;
 pub use data::DataContext;
 use recat_core::error::AppResult;
 use reddd::domain::UseCase;
@@ -7,6 +9,9 @@ use reddd::domain::UseCase;
 /// A trait to represent the state of the application.
 pub trait AppState: Sync {
     type Data: DataContext;
+    type Config: AppConfig;
+
+    fn config(&self) -> &Self::Config;
 
     /// Gets the application data context.
     fn data(&self) -> &Self::Data;
