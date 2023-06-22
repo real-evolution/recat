@@ -7,6 +7,9 @@ license-file.workspace = true
 readme.workspace = true
 
 [dependencies]
+# external dependencies
+clap = { version = "4", features = ["color", "derive", "env"] }
+
 # local dependencies
 recat-core = { path = "../recat-core" }
 recat-app = { path = "../recat-app" }
